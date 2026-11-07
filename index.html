@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas de Campo de Cableado Estructurado | Catálogo Técnico y Práctico</title>
+  <meta name="description" content="Guía multimedia e interactiva sobre las herramientas de campo esenciales para cableado estructurado: pelacables, ponchadora de impacto, crimpeadora RJ45, tester de red, tijeras de Kevlar, generador de tonos y spudger.">
+  <meta name="keywords" content="Herramientas cableado estructurado, Ponchadora de impacto, Crimpeadora RJ45, Tester de cable, Pelacables UTP, Generador de tonos, Fluke, ANSI/TIA-568, Telecomunicaciones">
+  <meta name="author" content="Laboratorio de Telecomunicaciones y Redes">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Herramientas de Campo | Cableado Estructurado">
+  <meta property="og:description" content="Catálogo interactivo con fotografías reales de cada herramienta, videos embebidos verificados y simuladores prácticos.">
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Fondo Temático Sutil con Superposición Oscura -->
+  <div class="bg-network-canvas" aria-hidden="true">
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+    <div class="bg-overlay-pattern"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- Barra de Progreso de Lectura -->
+  <div id="scroll-progress-bar" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header / Barra de Navegación Sticky Glassmorphism -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Inicio - Herramientas de Cableado">
+        <div class="logo-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">NET<span class="text-cyan">TOOLS</span></span>
+          <span class="logo-subtitle">Cableado Estructurado</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación por Fases -->
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#pelacables" class="nav-link">Pelacables</a>
+        <a href="#ponchadora" class="nav-link">Ponchadora</a>
+        <a href="#crimpeadora" class="nav-link">Crimpeadora</a>
+        <a href="#tester" class="nav-link">Tester</a>
+        <a href="#secundarias" class="nav-link">Secundarias</a>
+      </nav>
+
+      <!-- Botón de Acción / Simulador -->
+      <a href="#simulador-wiremap" class="header-badge-action">
+        <span class="pulse-dot"></span>
+        <span>Simulador Wiremap</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==========================================
+         SECCIÓN 1: HERO SECTION GENERAL
+         ========================================== -->
+    <section id="hero" class="hero-section scroll-reveal">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon">🛠️</span>
+          <span>Kit Profesional de Telecomunicaciones</span>
+        </div>
+
+        <h1 class="hero-title">
+          Herramientas de Campo en <br>
+          <span class="gradient-text">Cableado Estructurado</span>
+        </h1>
+
+        <p class="hero-description">
+          El éxito de un enlace de telecomunicaciones de alta velocidad (Cat 5e, 6, 6A y Fibra) depende de la precisión del técnico en tres etapas fundamentales: <strong>Preparación</strong>, <strong>Terminación</strong> y <strong>Certificación</strong>. Conoce cada herramienta con su fotografía real, principio de operación y demostración en video.
+        </p>
+
+        <!-- Navegación Rápida por las 3 Etapas -->
+        <div class="hero-phases-grid">
+          <a href="#pelacables" class="phase-card">
+            <span class="phase-step">Fase 1</span>
+            <div class="phase-info">
+              <span class="phase-title">Preparación</span>
+              <span class="phase-desc">Desforrado de cubierta sin morder conductores</span>
+            </div>
+          </a>
+
+          <a href="#ponchadora" class="phase-card">
+            <span class="phase-step">Fase 2</span>
+            <div class="phase-info">
+              <span class="phase-title">Terminación</span>
+              <span class="phase-desc">Impacto IDC (hembras) y Crimpeado (machos)</span>
+            </div>
+          </a>
+
+          <a href="#tester" class="phase-card">
+            <span class="phase-step">Fase 3</span>
+            <div class="phase-info">
+              <span class="phase-title">Certificación</span>
+              <span class="phase-desc">Mapeo de hilos (wiremap), continuidad y rastreo</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn-primary">
+            <span>Explorar Catálogo Visual</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#video-crimpeado" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Ver Videos Prácticos</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagen Destacada del Hero (Fotografía Real del Kit de Campo) -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img 
+            src="assets/hero_kit.jpg" 
+            alt="Kit completo de herramientas de cableado estructurado: pelacables, tester, ponchadora y crimpeadora"
+            class="hero-main-img"
+            loading="eager"
+          >
+          <div class="hero-image-overlay">
+            <div class="overlay-badge">
+              <span class="dot-green"></span>
+              <span>Fotografía Real de Instrumental de Campo Certificado</span>
+            </div>
+            <div class="overlay-stats">
+              <div class="overlay-stat-item">
+                <span class="stat-number">7</span>
+                <span class="stat-text">Herramientas Clave</span>
+              </div>
+              <div class="overlay-stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-text">Videos Verificados</span>
+              </div>
+              <div class="overlay-stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-text">Interactivo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="catalogo" class="catalog-divider"></div>
+
+    <!-- ==========================================
+         SECCIÓN 2: HERRAMIENTA 1: PELACABLES / DESFORRADORA
+         ========================================== -->
+    <section id="pelacables" class="section-container scroll-reveal">
+      <div class="tool-split-card">
+        <!-- Visual: Fotografía Real con rounded-2xl -->
+        <div class="tool-visual-pane">
+          <div class="image-frame">
+            <img 
+              src="assets/pelacables.jpg" 
+              alt="Fotografía real del pelacables rotatorio de par trenzado UTP y tester"
+              class="tool-photo"
+              loading="lazy"
+            >
+            <div class="image-caption-tag">
+              <span class="caption-icon">✂️</span>
+              <span>Pelador de par trenzado UTP / STP con cuchilla regulable</span>
+            </div>
+          </div>
+
+          <!-- Selector Interactivo de Calibres -->
+          <div class="interactive-gauge-box">
+            <span class="gauge-title">Ajuste de Profundidad según Cubierta:</span>
+            <div class="gauge-pills">
+              <button class="gauge-btn active" data-depth="Cat 5e/6 UTP: Giro suave a 1 vuelta (corte de cubierta exterior de PVC)">Cat 5e / 6</button>
+              <button class="gauge-btn" data-depth="Cat 6A F/UTP: Ajuste milimétrico para cortar LSZH sin morder foil de aluminio">Cat 6A Apantallado</button>
+              <button class="gauge-btn" data-depth="Coaxial RG6/RG59: Cuchilla dual para dieléctrico y forro exterior">Coaxial</button>
+            </div>
+            <p id="gauge-feedback" class="gauge-result-text">Cat 5e/6 UTP: Giro suave a 1 vuelta (corte de cubierta exterior de PVC)</p>
+          </div>
+        </div>
+
+        <!-- Contenido y Especificaciones -->
+        <div class="tool-content-pane">
+          <div class="tool-tag-pill">Herramienta de Preparación</div>
+          <h2 class="tool-heading">Pelacables / Desforradora <span class="gradient-text">(Cable Stripper)</span></h2>
+
+          <p class="tool-lead-text">
+            Diseñada con cuchilla circular autoajustable para <strong>retirar la chaqueta exterior de PVC o LSZH</strong> (5 a 6 cm) sin rozar, morder ni marcar el aislamiento de polietileno de los 8 conductores internos de cobre.
+          </p>
+
+          <!-- Tarjetas de Características Visuales -->
+          <div class="specs-mini-grid">
+            <div class="mini-spec-card">
+              <div class="spec-icon">🛡️</div>
+              <div class="spec-text">
+                <strong>Protección Anti-Muescas</strong>
+                <span>Evita incisiones en los hilos que causan diafonía (NEXT) y roturas.</span>
+              </div>
+            </div>
+
+            <div class="mini-spec-card">
+              <div class="spec-icon">🔄</div>
+              <div class="spec-text">
+                <strong>Operación de 1 Giro Radial</strong>
+                <span>El anillo para el dedo permite una rotación circular suave de 360°.</span>
+              </div>
+            </div>
+
+            <div class="mini-spec-card">
+              <div class="spec-icon">⚙️</div>
+              <div class="spec-text">
+                <strong>Tornillo Calibrador de Cuchilla</strong>
+                <span>Regula la altura de penetración según el calibre del cable (AWG 22 a 26).</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Referencia Bibliográfica Estilizada -->
+          <div class="section-reference-box">
+            <span class="ref-label">Fuente Técnica:</span>
+            <a href="https://es.flukenetworks.com/knowledge-base/copper-testing/cable-stripping-and-preparation" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="reference-link"
+               title="Ver guía de pelacables en Fluke Networks">
+              🔗 Guía de pelacables - Fluke Networks
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 3: HERRAMIENTA 2: PONCHADORA DE IMPACTO
+         ========================================== -->
+    <section id="ponchadora" class="section-container scroll-reveal">
+      <div class="tool-split-card reverse-layout">
+        <!-- Visual: Fotografía Real de la Ponchadora con Pestañas -->
+        <div class="tool-visual-pane">
+          <div class="image-frame">
+            <img 
+              src="assets/ponchadora.jpg" 
+              alt="Fotografía real de la ponchadora de impacto con cuchillas 110 y Krone"
+              class="tool-photo"
+              loading="lazy"
+            >
+            <div class="image-caption-tag">
+              <span class="caption-icon">⚡</span>
+              <span>Ponchadora de Impacto con Cuchillas 110 / Krone Reversibles</span>
+            </div>
+          </div>
+
+          <!-- Pestañas Interactivas Compactas de Cuchillas -->
+          <div class="compact-tabs-container">
+            <div class="compact-tabs-nav" role="tablist">
+              <button class="c-tab-btn active" data-tab="tab-110" role="tab" aria-selected="true">Cuchilla 110</button>
+              <button class="c-tab-btn" data-tab="tab-krone" role="tab" aria-selected="false">Cuchilla Krone (45°)</button>
+              <button class="c-tab-btn" data-tab="tab-66" role="tab" aria-selected="false">Cuchilla 66</button>
+            </div>
+
+            <div class="compact-tab-panel active" id="tab-110">
+              <div class="panel-badge usa">Estándar Americano ANSI/TIA-568</div>
+              <p>El estándar omnipresente en redes LAN modernas. Filo recto para Keystones y Patch Panels de bloque 110. Cercena el sobrante al exterior en un clic.</p>
+            </div>
+
+            <div class="compact-tab-panel" id="tab-krone">
+              <div class="panel-badge eu">Estándar Europeo LSA-Plus</div>
+              <p>Contactos dispuestos en ángulo de 45° respecto al conductor. Incluye mecanismo de tijeras laterales guiadas para un corte con menor resistencia.</p>
+            </div>
+
+            <div class="compact-tab-panel" id="tab-66">
+              <div class="panel-badge tel">Telefonía Clásica</div>
+              <p>Punta ancha para regletas M66 en distribución de voz analógica, centrales telefónicas PBX y distribución de pares troncales.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido y Especificaciones -->
+        <div class="tool-content-pane">
+          <div class="tool-tag-pill termination">Herramienta de Terminación Fija</div>
+          <h2 class="tool-heading">La Ponchadora de Impacto <span class="gradient-text">(Punch Down Tool)</span></h2>
+
+          <p class="tool-lead-text">
+            Asegura la conectividad en la infraestructura física fija (paneles de parcheo, rosetas de pared y módulos Keystone Jack). Su mecanismo de resorte introduce a presión los alambres en ranuras <strong>IDC (Insulation Displacement Connector)</strong> y corta el excedente en un único movimiento sincronizado.
+          </p>
+
+          <!-- Regla de Oro Destacada -->
+          <div class="golden-rule-compact">
+            <div class="rule-icon-box">🛑</div>
+            <div class="rule-info">
+              <strong>Regla de Oro: Orientación "CUT"</strong>
+              <span>El filo cortante marcado con <strong>"CUT"</strong> debe apuntar siempre hacia el <strong>exterior</strong> del conector. Si se coloca hacia adentro, se cortará el hilo que va hacia el switch, inutilizando el jack.</span>
+            </div>
+          </div>
+
+          <!-- Métricas de Impacto HI / LO -->
+          <div class="dual-stat-boxes">
+            <div class="stat-box-item lo">
+              <span class="box-tag">Fuerza "LO" (~10-15 kg)</span>
+              <span class="box-desc">Para Keystones Cat 5e/6 y bloques plásticos sensibles.</span>
+            </div>
+            <div class="stat-box-item hi">
+              <span class="box-tag">Fuerza "HI" (~15-20 kg)</span>
+              <span class="box-desc">Para conductores gruesos Cat 6A sólido (22-23 AWG).</span>
+            </div>
+          </div>
+
+          <!-- Referencia Bibliográfica Estilizada -->
+          <div class="section-reference-box">
+            <span class="ref-label">Fuente Técnica:</span>
+            <a href="https://verticalcable.com/blog/how-to-use-a-punch-down-tool-a-clear-straightforward-guide-for-installations" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="reference-link"
+               title="Ver guía de instalación en Vertical Cable">
+              🔗 Uso de la Ponchadora - Vertical Cable
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 4: HERRAMIENTA 3: LA CRIMPEADORA (CON VIDEO 1 VERIFICADO)
+         ========================================== -->
+    <section id="crimpeadora" class="section-container scroll-reveal">
+      <div class="tool-split-card">
+        <!-- Visual: Fotografía Real + Video 1 Embebido Activo -->
+        <div class="tool-visual-pane">
+          <div class="image-frame">
+            <img 
+              src="assets/crimpeadora.jpg" 
+              alt="Fotografía real de la crimpeadora profesional de conectores RJ45 y RJ11"
+              class="tool-photo"
+              loading="lazy"
+            >
+            <div class="image-caption-tag">
+              <span class="caption-icon">🔌</span>
+              <span>Crimpeadora Modular Profesional para RJ45 (8P8C)</span>
+            </div>
+          </div>
+
+          <!-- Video Embebido 1 (VERIFICADO Y ACTIVO EN YOUTUBE) -->
+          <div class="embedded-video-wrapper" id="video-crimpeado">
+            <div class="video-window-header">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">Video 1: Demostración de Crimpeado RJ45 Cat 5e/Cat 6</span>
+            </div>
+            <div class="responsive-iframe-box">
+              <iframe 
+                src="https://www.youtube.com/embed/iWoXN94RHIU?rel=0&modestbranding=1" 
+                title="Cómo crimpear un conector RJ45 a cable de red UTP Cat 5e" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-ref-container">
+              <a href="https://www.youtube.com/watch?v=iWoXN94RHIU" target="_blank" rel="noopener noreferrer" class="video-ref-link">
+                🔗 Referencia Audiovisual: Crimpeado RJ45
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido y Especificaciones -->
+        <div class="tool-content-pane">
+          <div class="tool-tag-pill mobile-terminal">Herramienta de Terminales Móviles</div>
+          <h2 class="tool-heading">La Crimpeadora Modular <span class="gradient-text">(Crimping Tool)</span></h2>
+
+          <p class="tool-lead-text">
+            Herramienta tipo prensa diseñada para ensamblar <strong>conectores modulares macho (RJ45 8P8C, RJ11 6P4C)</strong> en los extremos de cables de interconexión (<strong>Patch Cords</strong>).
+          </p>
+
+          <!-- Tarjetas Visuales de Funcionamiento -->
+          <div class="specs-mini-grid">
+            <div class="mini-spec-card">
+              <div class="spec-icon">⚡</div>
+              <div class="spec-text">
+                <strong>Presión Simultánea de 8 Pines</strong>
+                <span>Empuja las 8 cuchillas doradas perforando el aislamiento de cada hilo de cobre a la vez.</span>
+              </div>
+            </div>
+
+            <div class="mini-spec-card">
+              <div class="spec-icon">🔒</div>
+              <div class="spec-text">
+                <strong>Fijación Strain Relief</strong>
+                <span>Presiona la cuña plástica interna contra la chaqueta exterior para evitar desconexiones por tirones.</span>
+              </div>
+            </div>
+
+            <div class="mini-spec-card">
+              <div class="spec-icon">🔄</div>
+              <div class="spec-text">
+                <strong>Mecanismo de Trinquete (Ratchet)</strong>
+                <span>No libera el conector hasta completar la presión requerida, asegurando uniformidad.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Código de Colores Rápido T568B -->
+          <div class="pinout-quick-bar">
+            <span class="pinout-title">Alineación T568B para Conector Macho RJ45:</span>
+            <div class="pinout-colors">
+              <span class="pin-pill p-wo" title="Pin 1: Blanco/Naranja">1. B/N</span>
+              <span class="pin-pill p-o"  title="Pin 2: Naranja">2. NAR</span>
+              <span class="pin-pill p-wg" title="Pin 3: Blanco/Verde">3. B/V</span>
+              <span class="pin-pill p-b"  title="Pin 4: Azul">4. AZU</span>
+              <span class="pin-pill p-wb" title="Pin 5: Blanco/Azul">5. B/A</span>
+              <span class="pin-pill p-g"  title="Pin 6: Verde">6. VER</span>
+              <span class="pin-pill p-wbr" title="Pin 7: Blanco/Marrón">7. B/M</span>
+              <span class="pin-pill p-br" title="Pin 8: Marrón">8. MAR</span>
+            </div>
+          </div>
+
+          <!-- Referencia Bibliográfica Estilizada -->
+          <div class="section-reference-box">
+            <span class="ref-label">Fuente Técnica:</span>
+            <a href="https://www.gcabling.com/es/what-is-a-punch-down-tool-and-their-types/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="reference-link"
+               title="Ver comparativa de herramientas en Gcabling">
+              🔗 Ensamblaje de conectores modulares - Gcabling
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 5: HERRAMIENTA 4: TESTER / CERTIFICADOR (CON VIDEO 2 VERIFICADO Y SIMULADOR)
+         ========================================== -->
+    <section id="tester" class="section-container scroll-reveal">
+      <div class="tool-split-card reverse-layout">
+        <!-- Visual: Fotografía Real del Tester + Video 2 Embebido Activo -->
+        <div class="tool-visual-pane">
+          <div class="image-frame">
+            <img 
+              src="assets/tester.jpg" 
+              alt="Fotografía real del comprobador y tester de red RJ45 con unidad maestra y remota"
+              class="tool-photo"
+              loading="lazy"
+            >
+            <div class="image-caption-tag">
+              <span class="caption-icon">📊</span>
+              <span>Tester de Continuidad de Red RJ45 (Unidad Maestra y Remota)</span>
+            </div>
+          </div>
+
+          <!-- Video Embebido 2 (VERIFICADO Y ACTIVO EN YOUTUBE) -->
+          <div class="embedded-video-wrapper" id="video-tester">
+            <div class="video-window-header">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">Video 2: Cómo Usar un Tester de Cable Ethernet RJ45</span>
+            </div>
+            <div class="responsive-iframe-box">
+              <iframe 
+                src="https://www.youtube.com/embed/y3DmOPrmBio?rel=0&modestbranding=1" 
+                title="Cómo usar un comprobador tester de cable de red ethernet RJ45" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-ref-container">
+              <a href="https://www.youtube.com/watch?v=y3DmOPrmBio" target="_blank" rel="noopener noreferrer" class="video-ref-link">
+                🔗 Referencia Audiovisual: Pruebas de Continuidad
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido y Simulador Interactivo de Wiremap -->
+        <div class="tool-content-pane">
+          <div class="tool-tag-pill certification">Herramienta de Verificación y Certificación</div>
+          <h2 class="tool-heading">Tester / Certificador <span class="gradient-text">(Cable Tester)</span></h2>
+
+          <p class="tool-lead-text">
+            Equipo de diagnóstico compuesto por un transmisor maestro (TX) y un terminador remoto (RX). Valida la <strong>continuidad eléctrica pin a pin</strong>, mapeo de hilos (<em>wiremap</em>), pares cruzados, pares divididos (<em>split pairs</em>) y circuitos abiertos.
+          </p>
+
+          <!-- Interfaz de Resultados Simulada con CSS/JS -->
+          <div class="wiremap-simulator-card" id="simulador-wiremap">
+            <div class="sim-header">
+              <span class="sim-status-title">Simulador de Pantalla de Tester:</span>
+              <div class="sim-test-controls">
+                <button class="sim-mode-btn active" id="btn-wire-pass" data-mode="pass">Cable Correcto ✓</button>
+                <button class="sim-mode-btn" id="btn-wire-cross" data-mode="crossed">Par Cruzado ❌</button>
+                <button class="sim-mode-btn" id="btn-wire-open" data-mode="open">Hilo Abierto (Pin 4) ⚠️</button>
+              </div>
+            </div>
+
+            <!-- Pantalla LCD simulada con LEDs de Pines 1 a 8 -->
+            <div class="wiremap-display-screen">
+              <div class="display-header-row">
+                <span class="device-label">MASTER (TX)</span>
+                <span id="test-verdict-badge" class="verdict-badge pass">PASS - T568B</span>
+                <span class="device-label">REMOTE (RX)</span>
+              </div>
+
+              <!-- Matriz de 8 Pines con LEDs -->
+              <div class="pins-channel-grid">
+                <div class="pin-row" data-pin="1">
+                  <span class="pin-idx">PIN 1</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-1"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-1">PIN 1</span>
+                </div>
+                <div class="pin-row" data-pin="2">
+                  <span class="pin-idx">PIN 2</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-2"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-2">PIN 2</span>
+                </div>
+                <div class="pin-row" data-pin="3">
+                  <span class="pin-idx">PIN 3</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-3"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-3">PIN 3</span>
+                </div>
+                <div class="pin-row" data-pin="4">
+                  <span class="pin-idx">PIN 4</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-4"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-4">PIN 4</span>
+                </div>
+                <div class="pin-row" data-pin="5">
+                  <span class="pin-idx">PIN 5</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-5"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-5">PIN 5</span>
+                </div>
+                <div class="pin-row" data-pin="6">
+                  <span class="pin-idx">PIN 6</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-6"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-6">PIN 6</span>
+                </div>
+                <div class="pin-row" data-pin="7">
+                  <span class="pin-idx">PIN 7</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-7"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-7">PIN 7</span>
+                </div>
+                <div class="pin-row" data-pin="8">
+                  <span class="pin-idx">PIN 8</span>
+                  <div class="pin-line"><div class="led-indicator led-on" id="led-8"></div></div>
+                  <span class="pin-idx remote-idx" id="rx-8">PIN 8</span>
+                </div>
+              </div>
+
+              <!-- Mensaje Explicativo de la Prueba -->
+              <div id="sim-verdict-text" class="sim-verdict-box">
+                <strong>Continuidad Completa 1 a 1:</strong> Todos los 8 hilos transmiten correctamente en norma directa T568B. Enlace apto para Gigabit Ethernet (1000BASE-T) y alimentación PoE sin pérdidas.
+              </div>
+            </div>
+          </div>
+
+          <!-- Referencia Bibliográfica Estilizada -->
+          <div class="section-reference-box">
+            <span class="ref-label">Fuente Técnica:</span>
+            <a href="https://es.flukenetworks.com/knowledge-base/copper-testing/wiremap-testing" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="reference-link"
+               title="Ver pruebas de wiremap en Fluke Networks">
+              🔗 Pruebas de Wiremap y Mapeo - Fluke Networks
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 6: HERRAMIENTAS SECUNDARIAS ESENCIALES (GRID CON FOTOS REALES)
+         ========================================== -->
+    <section id="secundarias" class="section-container scroll-reveal">
+      <div class="section-header">
+        <div class="section-badge">Instrumental Complementario</div>
+        <h2 class="section-title">Herramientas Secundarias <span class="gradient-text">Esenciales en Campo</span></h2>
+        <p class="section-subtitle">
+          Dispositivos que marcan la diferencia entre un trabajo improvisado y una instalación profesional y certificable.
+        </p>
+      </div>
+
+      <!-- Cuadrícula Rápida de Herramientas con Fotografías Auténticas -->
+      <div class="secondary-tools-grid">
+
+        <!-- Herramienta Secundaria 1: Cortadora de Kevlar / Tijeras de Electricista -->
+        <div class="secondary-card scroll-reveal">
+          <div class="secondary-img-wrapper">
+            <img 
+              src="assets/tijeras_kevlar.jpg" 
+              alt="Fotografía real de las tijeras de electricista y cortadora de precisión"
+              class="secondary-img"
+              loading="lazy"
+            >
+            <span class="secondary-chip">Corte de Precisión</span>
+          </div>
+          <div class="secondary-body">
+            <h3 class="secondary-title">Cortadora de Kevlar / Tijeras de Electricista</h3>
+            <p class="secondary-desc">
+              Hojas forjadas con microdentado antideslizante. Diseñadas para <strong>cortar el hilo de aramida (Kevlar)</strong> protector en cables de fibra óptica y realizar cortes al ras en conductores de cobre sin aplastar el núcleo.
+            </p>
+            <div class="secondary-features">
+              <span class="s-feature">✓ Hojas de Alta Dureza Templadas</span>
+              <span class="s-feature">✓ Muesca Pelacables en la Base</span>
+              <span class="s-feature">✓ Corte Limpio de Fibras de Aramida</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramienta Secundaria 2: Generador de Tonos y Sonda ("El Pollo") -->
+        <div class="secondary-card scroll-reveal">
+          <div class="secondary-img-wrapper">
+            <img 
+              src="assets/generador_tonos.jpg" 
+              alt="Fotografía real del generador de tonos y sonda inductiva tipo pollo"
+              class="secondary-img"
+              loading="lazy"
+            >
+            <span class="secondary-chip tone-chip">Rastreo e Identificación</span>
+          </div>
+          <div class="secondary-body">
+            <h3 class="secondary-title">Generador de Tonos y Sonda ("El Pollo")</h3>
+            <p class="secondary-desc">
+              Inyecta una señal de radiofrecuencia modulada en un conductor. La sonda con punta plástica capta el tono por <strong>inducción magnética sin perforar el cable</strong>, permitiendo rastrear e identificar líneas individuales en mazos sin etiquetar.
+            </p>
+            <div class="secondary-features">
+              <span class="s-feature">✓ Sonda Inductiva de Alta Ganancia</span>
+              <span class="s-feature">✓ Conectores RJ11 y Pinzas Caimán</span>
+              <span class="s-feature">✓ Identificación Rápida en Racks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramienta Secundaria 3: Spudger y Gancho Extractor -->
+        <div class="secondary-card scroll-reveal">
+          <div class="secondary-img-wrapper">
+            <img 
+              src="assets/spudger.jpg" 
+              alt="Fotografía real de la herramienta spudger y ganchos extractores de telecomunicaciones"
+              class="secondary-img"
+              loading="lazy"
+            >
+            <span class="secondary-chip aux-chip">Mantenimiento y Corrección</span>
+          </div>
+          <div class="secondary-body">
+            <h3 class="secondary-title">Herramienta Spudger y Gancho Extractor</h3>
+            <p class="secondary-desc">
+              Varilla dieléctrica aislante con punta plana y gancho metálico. Permite <strong>extraer o reacomodar hilos de cobre mal insertados</strong> en las hendiduras IDC sin fracturar los peines plásticos del jack ni producir cortocircuitos.
+            </p>
+            <div class="secondary-features">
+              <span class="s-feature">✓ Cuerpo de Polímero Aislado</span>
+              <span class="s-feature">✓ Gancho de Acero para Retirar Hilos</span>
+              <span class="s-feature">✓ Rescate Seguro de Ranuras IDC</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Referencia Bibliográfica General de la Sección -->
+      <div class="section-reference-box text-center">
+        <span class="ref-label">Blog de Referencia en Telecomunicaciones:</span>
+        <a href="https://www.cablinginstall.com/tools-testing" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="reference-link"
+           title="Ver artículos de herramientas y pruebas en Cabling Installation & Maintenance">
+          🔗 Guía de herramientas auxiliares - Cabling Installation & Maintenance
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página Institucional -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-icon-box small">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <span class="footer-title">Laboratorio de Cableado Estructurado y Telecomunicaciones</span>
+      </div>
+
+      <div class="footer-copy">
+        <p>Catálogo Técnico de Herramientas de Campo con Fotografías Reales de Instrumental.</p>
+        <p class="copyright-text">Diseñado con HTML5 Semántico, CSS Moderno Dark Theme y JavaScript Nativo.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="back-to-top-btn" title="Volver al inicio de la página">
+          <span>Subir al inicio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Lógica e Interactividad -->
+  <script src="script.js"></script>
+</body>
+</html>
